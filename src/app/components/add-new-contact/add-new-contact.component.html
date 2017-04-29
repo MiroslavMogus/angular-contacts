@@ -1,0 +1,61 @@
+<div class="container">
+	<div [hidden]="contactAdded">
+		<h3 style="margin-top: 30px;">Informacije o kontaktu <span style="font-size:small"> polja označena znakom * su obavezna</span></h3>
+
+		<form (ngSubmit)="onSubmit()">
+			<md-grid-list cols="4" rowHeight="60px">
+				<md-grid-tile [colspan]="4" [rowspan]="1">
+					<md-input-container>
+						<input mdInput id="firstname" type="text" required [(ngModel)]="newContact.firstname" name="firstname" placeholder="Ime">
+					</md-input-container>
+				</md-grid-tile>
+			</md-grid-list>
+			
+			<md-grid-list cols="4" rowHeight="60px">
+				<md-grid-tile [colspan]="2" [rowspan]="1">
+					<md-input-container>
+						<input mdInput id="lastname" type="text" required [(ngModel)]="newContact.lastname" name="lastname" placeholder="Prezime">
+					</md-input-container>
+				</md-grid-tile>
+				<md-grid-tile [colspan]="2" [rowspan]="1">
+					<md-input-container>
+						<input mdInput id="oib" type="number" required [(ngModel)]="newContact.oib" name="oib" step="1" placeholder="Oib">
+					</md-input-container>
+				</md-grid-tile>
+			</md-grid-list>
+
+			<md-grid-list cols="4" rowHeight="60px">
+				<md-grid-tile [colspan]="4" [rowspan]="1">
+					<md-input-container>
+						<input mdInput id="address" type="text" required [(ngModel)]="newContact.address" name="address" placeholder="Adresa">
+					</md-input-container>
+				</md-grid-tile>
+			</md-grid-list>
+
+			<md-grid-list cols="4" rowHeight="60px">
+				<md-grid-tile [colspan]="2" [rowspan]="1">
+					<md-input-container>
+						<input mdInput id="city" type="text" [(ngModel)]="newContact.city" name="city" placeholder="Grad">
+					</md-input-container>
+				</md-grid-tile>
+				<md-grid-tile [colspan]="2" [rowspan]="1">
+					<md-input-container>
+						<input mdInput id="country" type="text" required [(ngModel)]="newContact.country" name="country" placeholder="Država">
+					</md-input-container>
+				</md-grid-tile>
+			</md-grid-list>
+
+			<md-grid-list cols="20" rowHeight="60px">
+				<md-grid-tile [colspan]="2" [rowspan]="1">
+						<button class="mat-primary" md-raised-button type="submit">Unesite kontakt</button>
+				</md-grid-tile>
+				<md-grid-tile [colspan]="2" [rowspan]="1">
+					<a class="mat-warn" md-raised-button routerLink="/">Cancel</a>
+				</md-grid-tile>
+			</md-grid-list>
+		</form>
+	</div>
+	<div class="row" [hidden]="!contactAdded" >
+		<h3>Kontakt je uspješno unesen u bazu!</h3>
+	</div>
+</div>
