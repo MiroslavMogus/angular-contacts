@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Http, Headers } from '@angular/http'
 import { Contact } from '../models/contact';
 
 @Injectable()
@@ -8,7 +8,7 @@ export class AddNewContactService {
   constructor(private http:Http) { }
 
   	sendContact(contact:Contact)	{
-  		let url = "http://localhost:8080/contact/add";
+  		let url = "http://httpbin.org/post";
 
   		let headers = new Headers ({
   			'Content-Type': 'application/json',
@@ -17,6 +17,7 @@ export class AddNewContactService {
 				'Access-Control-Allow-Headers': 'origin, content-type, accept'
   		});
 
+      console.log(contact);
   		return this.http.post(url, JSON.stringify(contact), {headers: headers});
   	}
 }

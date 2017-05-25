@@ -1,0 +1,49 @@
+<div><br>
+    <div>
+    </div>
+    <div>
+        <div>
+            <div>Pretraživanje kontakata po prezimenu:</div>
+            <div>
+                <input type='text'
+                				[(ngModel)]='searchCriteria' />   
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>Pretraži: {{ searchCriteria }}</h3>
+            </div>
+        </div>
+		
+	</div>
+	<div>
+        <table class='table' *ngIf="contacts && contacts.length">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>Adresa</th>
+                    <th>Grad</th>
+                    <th>Država</th>
+                    <th>Oib</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let contact of contacts | contactFilter:searchCriteria'>
+                    <td>{{contact.id}}</td>
+                    <td>{{contact.lastname | lowercase }}</td>
+  					<td>
+                     <a routerLink='/edit-contact/{{contact.id}}'>{{contact.name | lowercase}} </a>
+                    </td>
+                    <td>{{contact.address | lowercase}}</td>
+                    <td>{{contact.city}}</td>
+                    <td>{{contact.country | lowercase}}</td>
+                    <td>{{contact.oib}}</td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+[{"id":1, "lastname":"Miro", "firstname":"Zoric", "address":"Miriceva 45", "city":"Vi\u0161njevac", "country":"Croatia", "oib":84510762132},
+ {"id":2, "lastname":"Test", "firstname":"Katicic", "address":"P pre 21", "city":"Osijek", "country":"Croatia", "oib":84510762131},
+ {"id":3, "lastname":"Jadranko", "firstname":"Zoranic", "address":"Miriceva 45", "city":"Vi\u0161njevac", "country":"Croatia", "oib":83510762132},
+ {"id":4, "lastname":"Marko", "firstname":"Miric", "address":"Miriceva 45", "city":"Croatia", "country":"Vi\u0161njevac", "oib":83510762137},
+ {"id":5, "lastname":"Mirko", "firstname":"Maric", "address":"Vi\u0161njevac", "city":"Iphone", "country":"Miro", "oib":83510762166},
+ {"id":6, "lastname":"Miro", "firstname":"Kresic", "address":"Miriceva 45", "city":"Vi\u0161njevac", "country":"Croatia", "oib":83510762177},
+ {"id":7, "lastname":"Mirosslav", "firstname":"Zokicic", "address":"Miriceva 45", "city":"Vi\u0161njevac", "country":"Croatia", "oib":83510762178},
+ {"id":8, "lastname":"Stevo", "firstname":"Peric", "address":"Miriceva 45", "city":"Vi\u0161njevac", "country":"Croatia", "oib":84610762199},
+ {"id":9, "lastname":"Perko", "firstname":"Djuric", "address":"Miriceva 40", "city":"Vi\u0161njevac", "country":"Croatia", "oib":82610762198},
+ {"id":10, "lastname":"Pero", "firstname":"Iphone", "address":"Miriceva 40", "city":"Vi\u0161njevac", "country":"Croatia", "oib":82610762104},
+ {"id":11, "lastname":"Miro", "firstname":"Android", "address":"Miriceva 40", "city":"Vi\u0161njevac", "country":"Croatia", "oib":33333762156}]

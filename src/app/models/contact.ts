@@ -1,7 +1,7 @@
 export class Contact {
 	public id: number;
-	public firstname: string;
-	public lastname: string;
+	public firstName: string;
+	public lastName: string;
 	public oib: number;
 	public address: string;
 	public city: string;
